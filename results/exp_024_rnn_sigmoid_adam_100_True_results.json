@@ -1,0 +1,82 @@
+{
+  "experiment_name": "exp_024_rnn_sigmoid_adam_100_True",
+  "config": {
+    "embedding_dim": 100,
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "dropout": 0.3,
+    "batch_size": 32,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "patience": 5,
+    "min_delta": 0.001,
+    "clip_value": 1.0,
+    "experiment_name": "exp_024_rnn_sigmoid_adam_100_True",
+    "architecture": "rnn",
+    "activation": "sigmoid",
+    "optimizer": "adam",
+    "sequence_length": 100,
+    "gradient_clipping": true
+  },
+  "test_metrics": {
+    "accuracy": 0.81708,
+    "f1_score": 0.8169968172941252,
+    "f1_weighted": 0.816991511080242,
+    "precision": 0.8177449731351898,
+    "recall": 0.81708,
+    "roc_auc": 0.892900611508971,
+    "loss": 0.5204517473859708,
+    "avg_inference_time": 0.00028964290228646126,
+    "total_inference_time": 0.2265007495880127,
+    "num_samples": 25000,
+    "num_batches": 782,
+    "confusion_matrix": [
+      [
+        9947,
+        2570
+      ],
+      [
+        2003,
+        10480
+      ]
+    ],
+    "classification_report": {
+      "Negative": {
+        "precision": 0.8323849372384937,
+        "recall": 0.7946792362387154,
+        "f1-score": 0.813095189438836,
+        "support": 12517.0
+      },
+      "Positive": {
+        "precision": 0.8030651340996169,
+        "recall": 0.8395417768164704,
+        "f1-score": 0.8208984451494145,
+        "support": 12483.0
+      },
+      "accuracy": 0.81708,
+      "macro avg": {
+        "precision": 0.8177250356690553,
+        "recall": 0.8171105065275929,
+        "f1-score": 0.8169968172941252,
+        "support": 25000.0
+      },
+      "weighted avg": {
+        "precision": 0.8177449731351898,
+        "recall": 0.81708,
+        "f1-score": 0.816991511080242,
+        "support": 25000.0
+      }
+    },
+    "true_positives": 10480,
+    "true_negatives": 9947,
+    "false_positives": 2570,
+    "false_negatives": 2003,
+    "positive_samples": 12483,
+    "negative_samples": 12517,
+    "predicted_positive": 13050,
+    "predicted_negative": 11950
+  },
+  "avg_epoch_time": 2.2605509024399977,
+  "total_training_time": 39.456037282943726,
+  "model_path": "../results/exp_024_rnn_sigmoid_adam_100_True_model.pth"
+}

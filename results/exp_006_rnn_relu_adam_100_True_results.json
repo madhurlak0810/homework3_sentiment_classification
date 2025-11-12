@@ -1,0 +1,82 @@
+{
+  "experiment_name": "exp_006_rnn_relu_adam_100_True",
+  "config": {
+    "embedding_dim": 100,
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "dropout": 0.3,
+    "batch_size": 32,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "patience": 5,
+    "min_delta": 0.001,
+    "clip_value": 1.0,
+    "experiment_name": "exp_006_rnn_relu_adam_100_True",
+    "architecture": "rnn",
+    "activation": "relu",
+    "optimizer": "adam",
+    "sequence_length": 100,
+    "gradient_clipping": true
+  },
+  "test_metrics": {
+    "accuracy": 0.81136,
+    "f1_score": 0.8113471909270307,
+    "f1_weighted": 0.8113450768081911,
+    "precision": 0.8114797436283578,
+    "recall": 0.81136,
+    "roc_auc": 0.8859086849767037,
+    "loss": 0.5318227537509883,
+    "avg_inference_time": 0.00029742656766301224,
+    "total_inference_time": 0.23258757591247559,
+    "num_samples": 25000,
+    "num_batches": 782,
+    "confusion_matrix": [
+      [
+        10039,
+        2478
+      ],
+      [
+        2238,
+        10245
+      ]
+    ],
+    "classification_report": {
+      "Negative": {
+        "precision": 0.8177079090983139,
+        "recall": 0.8020292402332827,
+        "f1-score": 0.8097926917802695,
+        "support": 12517.0
+      },
+      "Positive": {
+        "precision": 0.8052346144777175,
+        "recall": 0.8207161739966354,
+        "f1-score": 0.812901690073792,
+        "support": 12483.0
+      },
+      "accuracy": 0.81136,
+      "macro avg": {
+        "precision": 0.8114712617880158,
+        "recall": 0.811372707114959,
+        "f1-score": 0.8113471909270307,
+        "support": 25000.0
+      },
+      "weighted avg": {
+        "precision": 0.8114797436283578,
+        "recall": 0.81136,
+        "f1-score": 0.8113450768081911,
+        "support": 25000.0
+      }
+    },
+    "true_positives": 10245,
+    "true_negatives": 10039,
+    "false_positives": 2478,
+    "false_negatives": 2238,
+    "positive_samples": 12483,
+    "negative_samples": 12517,
+    "predicted_positive": 12723,
+    "predicted_negative": 12277
+  },
+  "avg_epoch_time": 2.3234609842300413,
+  "total_training_time": 31.550535440444946,
+  "model_path": "../results/exp_006_rnn_relu_adam_100_True_model.pth"
+}

@@ -1,0 +1,82 @@
+{
+  "experiment_name": "exp_106_lstm_tanh_rmsprop_50_True",
+  "config": {
+    "embedding_dim": 100,
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "dropout": 0.3,
+    "batch_size": 32,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "patience": 5,
+    "min_delta": 0.001,
+    "clip_value": 1.0,
+    "experiment_name": "exp_106_lstm_tanh_rmsprop_50_True",
+    "architecture": "lstm",
+    "activation": "tanh",
+    "optimizer": "rmsprop",
+    "sequence_length": 50,
+    "gradient_clipping": true
+  },
+  "test_metrics": {
+    "accuracy": 0.76472,
+    "f1_score": 0.7647108384047414,
+    "f1_weighted": 0.7647128351626825,
+    "precision": 0.7647420963115702,
+    "recall": 0.76472,
+    "roc_auc": 0.8374065600671735,
+    "loss": 0.6356270424926372,
+    "avg_inference_time": 0.00028495593449038924,
+    "total_inference_time": 0.22283554077148438,
+    "num_samples": 25000,
+    "num_batches": 782,
+    "confusion_matrix": [
+      [
+        9637,
+        2880
+      ],
+      [
+        3002,
+        9481
+      ]
+    ],
+    "classification_report": {
+      "Negative": {
+        "precision": 0.7624812089564048,
+        "recall": 0.7699129184309339,
+        "f1-score": 0.7661790427730959,
+        "support": 12517.0
+      },
+      "Positive": {
+        "precision": 0.7670091416552058,
+        "recall": 0.7595129375951294,
+        "f1-score": 0.763242634036387,
+        "support": 12483.0
+      },
+      "accuracy": 0.76472,
+      "macro avg": {
+        "precision": 0.7647451753058053,
+        "recall": 0.7647129280130316,
+        "f1-score": 0.7647108384047414,
+        "support": 25000.0
+      },
+      "weighted avg": {
+        "precision": 0.7647420963115702,
+        "recall": 0.76472,
+        "f1-score": 0.7647128351626825,
+        "support": 25000.0
+      }
+    },
+    "true_positives": 9481,
+    "true_negatives": 9637,
+    "false_positives": 2880,
+    "false_negatives": 3002,
+    "positive_samples": 12483,
+    "negative_samples": 12517,
+    "predicted_positive": 12361,
+    "predicted_negative": 12639
+  },
+  "avg_epoch_time": 1.9609197889055525,
+  "total_training_time": 18.54594612121582,
+  "model_path": "../results/exp_106_lstm_tanh_rmsprop_50_True_model.pth"
+}

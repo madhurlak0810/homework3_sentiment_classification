@@ -1,0 +1,82 @@
+{
+  "experiment_name": "exp_007_rnn_relu_sgd_25_False",
+  "config": {
+    "embedding_dim": 100,
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "dropout": 0.3,
+    "batch_size": 32,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "patience": 5,
+    "min_delta": 0.001,
+    "clip_value": 1.0,
+    "experiment_name": "exp_007_rnn_relu_sgd_25_False",
+    "architecture": "rnn",
+    "activation": "relu",
+    "optimizer": "sgd",
+    "sequence_length": 25,
+    "gradient_clipping": false
+  },
+  "test_metrics": {
+    "accuracy": 0.49932,
+    "f1_score": 0.3330309740415655,
+    "f1_weighted": 0.332578051916869,
+    "precision": 0.2493204624,
+    "recall": 0.49932,
+    "roc_auc": 0.5220852440488674,
+    "loss": 0.6931357289214268,
+    "avg_inference_time": 0.0002811680669369905,
+    "total_inference_time": 0.21987342834472656,
+    "num_samples": 25000,
+    "num_batches": 782,
+    "confusion_matrix": [
+      [
+        0,
+        12517
+      ],
+      [
+        0,
+        12483
+      ]
+    ],
+    "classification_report": {
+      "Negative": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 12517.0
+      },
+      "Positive": {
+        "precision": 0.49932,
+        "recall": 1.0,
+        "f1-score": 0.666061948083131,
+        "support": 12483.0
+      },
+      "accuracy": 0.49932,
+      "macro avg": {
+        "precision": 0.24966,
+        "recall": 0.5,
+        "f1-score": 0.3330309740415655,
+        "support": 25000.0
+      },
+      "weighted avg": {
+        "precision": 0.2493204624,
+        "recall": 0.49932,
+        "f1-score": 0.332578051916869,
+        "support": 25000.0
+      }
+    },
+    "true_positives": 12483,
+    "true_negatives": 0,
+    "false_positives": 12517,
+    "false_negatives": 0,
+    "positive_samples": 12483,
+    "negative_samples": 12517,
+    "predicted_positive": 25000,
+    "predicted_negative": 0
+  },
+  "avg_epoch_time": 1.6976817051569622,
+  "total_training_time": 14.267146825790405,
+  "model_path": "../results/exp_007_rnn_relu_sgd_25_False_model.pth"
+}

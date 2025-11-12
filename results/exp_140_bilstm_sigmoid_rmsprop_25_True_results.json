@@ -1,0 +1,82 @@
+{
+  "experiment_name": "exp_140_bilstm_sigmoid_rmsprop_25_True",
+  "config": {
+    "embedding_dim": 100,
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "dropout": 0.3,
+    "batch_size": 32,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "patience": 5,
+    "min_delta": 0.001,
+    "clip_value": 1.0,
+    "experiment_name": "exp_140_bilstm_sigmoid_rmsprop_25_True",
+    "architecture": "bilstm",
+    "activation": "sigmoid",
+    "optimizer": "rmsprop",
+    "sequence_length": 25,
+    "gradient_clipping": true
+  },
+  "test_metrics": {
+    "accuracy": 0.70276,
+    "f1_score": 0.701892004434499,
+    "f1_weighted": 0.7019138812686183,
+    "precision": 0.7049867106837514,
+    "recall": 0.70276,
+    "roc_auc": 0.7786425377772379,
+    "loss": 0.7487584515034086,
+    "avg_inference_time": 0.00031843392745308256,
+    "total_inference_time": 0.24901533126831055,
+    "num_samples": 25000,
+    "num_batches": 782,
+    "confusion_matrix": [
+      [
+        9459,
+        3058
+      ],
+      [
+        4373,
+        8110
+      ]
+    ],
+    "classification_report": {
+      "Negative": {
+        "precision": 0.6838490456911509,
+        "recall": 0.7556922585284014,
+        "f1-score": 0.7179779118752134,
+        "support": 12517.0
+      },
+      "Positive": {
+        "precision": 0.7261819484240688,
+        "recall": 0.6496835696547304,
+        "f1-score": 0.6858060969937846,
+        "support": 12483.0
+      },
+      "accuracy": 0.70276,
+      "macro avg": {
+        "precision": 0.7050154970576099,
+        "recall": 0.7026879140915658,
+        "f1-score": 0.701892004434499,
+        "support": 25000.0
+      },
+      "weighted avg": {
+        "precision": 0.7049867106837514,
+        "recall": 0.70276,
+        "f1-score": 0.7019138812686183,
+        "support": 25000.0
+      }
+    },
+    "true_positives": 8110,
+    "true_negatives": 9459,
+    "false_positives": 3058,
+    "false_negatives": 4373,
+    "positive_samples": 12483,
+    "negative_samples": 12517,
+    "predicted_positive": 11168,
+    "predicted_negative": 13832
+  },
+  "avg_epoch_time": 2.24922858344184,
+  "total_training_time": 26.924155950546265,
+  "model_path": "../results/exp_140_bilstm_sigmoid_rmsprop_25_True_model.pth"
+}

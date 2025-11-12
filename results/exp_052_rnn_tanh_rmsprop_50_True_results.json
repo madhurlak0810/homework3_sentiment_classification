@@ -1,0 +1,82 @@
+{
+  "experiment_name": "exp_052_rnn_tanh_rmsprop_50_True",
+  "config": {
+    "embedding_dim": 100,
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "dropout": 0.3,
+    "batch_size": 32,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "patience": 5,
+    "min_delta": 0.001,
+    "clip_value": 1.0,
+    "experiment_name": "exp_052_rnn_tanh_rmsprop_50_True",
+    "architecture": "rnn",
+    "activation": "tanh",
+    "optimizer": "rmsprop",
+    "sequence_length": 50,
+    "gradient_clipping": true
+  },
+  "test_metrics": {
+    "accuracy": 0.74868,
+    "f1_score": 0.7486264172070918,
+    "f1_weighted": 0.7486314084809518,
+    "precision": 0.7488454495260121,
+    "recall": 0.74868,
+    "roc_auc": 0.810182941714369,
+    "loss": 0.5436298251533143,
+    "avg_inference_time": 0.00026396534327046035,
+    "total_inference_time": 0.2064208984375,
+    "num_samples": 25000,
+    "num_batches": 782,
+    "confusion_matrix": [
+      [
+        9541,
+        2976
+      ],
+      [
+        3307,
+        9176
+      ]
+    ],
+    "classification_report": {
+      "Negative": {
+        "precision": 0.7426058530510585,
+        "recall": 0.7622433490452984,
+        "f1-score": 0.7522964715158683,
+        "support": 12517.0
+      },
+      "Positive": {
+        "precision": 0.7551020408163265,
+        "recall": 0.7350797084034286,
+        "f1-score": 0.7449563628983153,
+        "support": 12483.0
+      },
+      "accuracy": 0.74868,
+      "macro avg": {
+        "precision": 0.7488539469336926,
+        "recall": 0.7486615287243635,
+        "f1-score": 0.7486264172070918,
+        "support": 25000.0
+      },
+      "weighted avg": {
+        "precision": 0.7488454495260121,
+        "recall": 0.74868,
+        "f1-score": 0.7486314084809518,
+        "support": 25000.0
+      }
+    },
+    "true_positives": 9176,
+    "true_negatives": 9541,
+    "false_positives": 2976,
+    "false_negatives": 3307,
+    "positive_samples": 12483,
+    "negative_samples": 12517,
+    "predicted_positive": 12152,
+    "predicted_negative": 12848
+  },
+  "avg_epoch_time": 1.7835969243730818,
+  "total_training_time": 16.8481707572937,
+  "model_path": "../results/exp_052_rnn_tanh_rmsprop_50_True_model.pth"
+}

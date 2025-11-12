@@ -1,0 +1,82 @@
+{
+  "experiment_name": "exp_126_bilstm_relu_rmsprop_100_True",
+  "config": {
+    "embedding_dim": 100,
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "dropout": 0.3,
+    "batch_size": 32,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "patience": 5,
+    "min_delta": 0.001,
+    "clip_value": 1.0,
+    "experiment_name": "exp_126_bilstm_relu_rmsprop_100_True",
+    "architecture": "bilstm",
+    "activation": "relu",
+    "optimizer": "rmsprop",
+    "sequence_length": 100,
+    "gradient_clipping": true
+  },
+  "test_metrics": {
+    "accuracy": 0.79104,
+    "f1_score": 0.7902126321873257,
+    "f1_weighted": 0.7902305497068359,
+    "precision": 0.7954679846239221,
+    "recall": 0.79104,
+    "roc_auc": 0.8703452801906302,
+    "loss": 0.6171709420754934,
+    "avg_inference_time": 0.000340829115084675,
+    "total_inference_time": 0.2665283679962158,
+    "num_samples": 25000,
+    "num_batches": 782,
+    "confusion_matrix": [
+      [
+        10673,
+        1844
+      ],
+      [
+        3380,
+        9103
+      ]
+    ],
+    "classification_report": {
+      "Negative": {
+        "precision": 0.759481961147086,
+        "recall": 0.8526803547175841,
+        "f1-score": 0.8033872788859616,
+        "support": 12517.0
+      },
+      "Positive": {
+        "precision": 0.8315520233854024,
+        "recall": 0.7292317551870544,
+        "f1-score": 0.7770379854886897,
+        "support": 12483.0
+      },
+      "accuracy": 0.79104,
+      "macro avg": {
+        "precision": 0.7955169922662442,
+        "recall": 0.7909560549523192,
+        "f1-score": 0.7902126321873257,
+        "support": 25000.0
+      },
+      "weighted avg": {
+        "precision": 0.7954679846239221,
+        "recall": 0.79104,
+        "f1-score": 0.7902305497068359,
+        "support": 25000.0
+      }
+    },
+    "true_positives": 9103,
+    "true_negatives": 10673,
+    "false_positives": 1844,
+    "false_negatives": 3380,
+    "positive_samples": 12483,
+    "negative_samples": 12517,
+    "predicted_positive": 10947,
+    "predicted_negative": 14053
+  },
+  "avg_epoch_time": 2.6216265201568603,
+  "total_training_time": 34.77395820617676,
+  "model_path": "../results/exp_126_bilstm_relu_rmsprop_100_True_model.pth"
+}
